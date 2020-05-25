@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!-- cabecera -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Sánchez</title>
-    <link rel="icon" href="logo.png" />
+    <title>Welcome - I am DanielS</title>
+    <link rel="icon" href="images/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- header logo - Se identidica con una clase para poder darle estilos con el css -->
     <header class="header">
+      <!-- Se crean etiquetas div< con la clase container para que el contenido se pueda separar del borde en el css -->
       <div class="container">
         <figure class="logo">
-          <img src="logo.png" alt="Logo de http://www.daessar.dev" />
+          <img src="images/Logo2.jpg" alt="Logo de http://www.daessar.dev" />
         </figure>
+        <!-- menu y enlaces para secciones de la pagina con # -->
         <nav class="menu">
+          <!-- Se crean lista no ordenadas con la etiqueta ol - los elementos se asignan con li -->
           <ol>
             <li>
               <a class="link" href="#portafolio">Portafolio</a>
@@ -28,10 +33,16 @@
             <li>
               <a class="link" href="#contacto">Trabajemos juntos</a>
             </li>
+            <li>
+              <a class="link" href="https://www.youtube.com" target="_blank"
+                >Tutoriales</a
+              >
+            </li>
           </ol>
         </nav>
       </div>
     </header>
+    <!-- Seccion de presentancion e imagen inicial de perfil normalmente conocidad como hero -->
     <section class="hero">
       <div class="container">
         <h1>
@@ -46,21 +57,22 @@
         </h1>
         <img
           class="hero-image"
-          src="Perfil.jpg.png"
-          width="500"
+          src="images/Perfil.jpg"
+          width="400"
           height="300"
           alt="Imagen de perfil"
         />
       </div>
     </section>
+    <!-- Seccion de portafolio donde muestro los proyectos destacados -->
     <section id="portafolio" class="portfolio">
       <div class="container">
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article class="project">
           <div class="project-details">
-            <h3 class="project-title">Be Hidro Farmer</h3>
+            <h3 class="project-title">Be Hydro Farmer</h3>
             <h6 class="project-electronics">
-              <strong>Electronics | plants</strong>
+              <strong>Electronics | Plants</strong>
             </h6>
             <p class="-project-date">
               <small><strong>Fecha</strong> 10/09/2019</small>
@@ -72,8 +84,8 @@
               >
             </p>
             <p class="project-descripton">
-              Be Hydrofarmer hace que la experiencia de cultivar urbano sea mas
-              fácil por medio de una APP Aplicación desarrollada para nuestros
+              Be Hydrofarmer hace que la experiencia de cultivar urbano sea más
+              fácil por medio de una aplicación móvil desarrollada para nuestros
               cultivos.
             </p>
             <a href="https://behydrofarmer.com" target="_blank">Saber más..</a>
@@ -81,7 +93,7 @@
           <figure class="project-imageContainer">
             <img
               class="project-image"
-              src="BHF.jpg"
+              src="images/BHF.jpg"
               alt="Cultivos urbanos BHF"
               width="500"
               height="500"
@@ -90,16 +102,19 @@
         </article>
       </div>
     </section>
+    <!-- Seccion donde hablo de mi experiencia y demas proyectos -->
     <div class="container">
-      <h2 class="event-list-title">Mas sobre mi experencia</h2>
+      <!-- Se ingresa el titulo de experiencia en un div para aislarlo de los cuadros de los eventos -->
+      <h2 id="eventos" class="event-list-title">Mas sobre mi experiencia</h2>
     </div>
-    <section id="eventos" class="event-list">
+    <section class="event-list">
       <div class="container">
+        <!-- Se dividen los proyectos con la etiqueta article con la clase event -->
         <article class="event">
           <figure class="event-imageContainer">
             <img
               class="event-image"
-              src="ProyectTimbre.PNG"
+              src="images/ProyectTimbre.PNG"
               alt="Proyecto Timbre Colegio"
               width="500"
               height="500"
@@ -110,8 +125,30 @@
             <p class="event-description">
               Este proyecto lo desarrolle para el colegio en el cual soy
               egresado. Permite programas hasta tres horarios. Una de las
-              caracteristicas llamativas de este timbre que le puedes añadir
+              características llamativas de este timbre que le puedes añadir
               canciones para el cambio de clase.
+            </p>
+          </div>
+        </article>
+        <!-- Inicio de otro proyecto -->
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/Projects2.PNG"
+              alt="Proyecto Timbre Colegio"
+              width="500"
+              height="500"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Fenixbot</h3>
+            <p class="event-description">
+              Fenixbot nace de la idea de llevar los conocimiento de diseño y
+              electrónica al concurso de robótica más grande de Colombia en la
+              categoría de robot fútbol. Este robot es controlado mediante un
+              control de play 2. El equipo de desarrollo se conformó junto a
+              Alejandro Sálazar y Jonathan Araque.
             </p>
           </div>
         </article>
@@ -119,25 +156,48 @@
           <figure class="event-imageContainer">
             <img
               class="event-image"
-              src="ProyectTimbre.PNG"
+              src="images/ThorArm.jpg"
               alt="Proyecto Timbre Colegio"
               width="500"
               height="500"
             />
           </figure>
           <div class="event-detail">
-            <h3 class="event-title">Timbre Musical</h3>
+            <h3 class="event-title">ThorArm V2</h3>
             <p class="event-description">
-              Este proyecto lo desarrolle para el colegio en el cual soy
-              egresado. Permite programas hasta tres horarios. Una de las
-              caracteristicas llamativas de este timbre que le puedes añadir
-              canciones para el cambio de clase.
+              Desde que conocí la impresión 3d siempre quise un brazo robotico
+              estilo kuka robótics o algo parecido. Este el proyecto que hasta
+              el momento me ha sido el más complejo de ensamblar debido a su
+              cantidad de piezas en impresión 3d. Me apoyé en repositorios de
+              código libre.
+            </p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/Impresion3d.jpg"
+              alt="Proyecto Timbre Colegio"
+              width="500"
+              height="500"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Fabricación Impresoras 3d</h3>
+            <p class="event-description">
+              Participe en el desarrollo de impresoras 3d en la empresa Dynamics
+              Maker. El modelo de Hypercube 30 fue uno de los más complejos de
+              desarrollar. Su sistema de movimiento corexy hizo que nos
+              replantáramos algunas cosas en el diseño. Sin duda haber
+              participado en el desarrollo de esta máquina me ayudo a entender
+              cómo se construía una impresora 3d desde cero.
             </p>
           </div>
         </article>
       </div>
     </section>
-
+    <!-- Seccion donde muestro la informacion de contacto y donde seguirme -->
     <section id="contacto" class="contact">
       <div class="container">
         <form action="/suscripcion/" class="form-email">
@@ -145,20 +205,28 @@
           <input type="text" value="Dejame tu email"" id="email"/>
           <button>Enviar</button>
         </form>
+        <!-- Redes sociales para saber más de mi -->
         <div class="social">
           <a
             href="https://twitter.com/daessaar"
+            target="_blank"
             class="social-link twitter"
           ></a>
-          <a href="https://github.com/daessar" class="social-link github"></a>
           <a
-            href="linkedin.com/in/danielsanchezdev"
+            href="https://github.com/daessar"
+            target="_blank"
+            class="social-link github"
+          ></a>
+          <a
+            href="https://linkedin.com/in/danielsanchezdev"
+            target="_blank"
             class="social-link linkedin"
           >
           </a>
         </div>
       </div>
     </section>
+    <!-- El footer se usa para poner una descripcion en el pie de pagina del website -->
     <footer class="footer">
       <div>
         <p>Copyright &copy; 2020 by Daessar</p>

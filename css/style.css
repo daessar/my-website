@@ -29,6 +29,60 @@ h2 {
   font-size: 24px;
   margin-bottom: 40px;
 }
+
+.header {
+  background-color: #20374e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.menu {
+  height: inherit;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  display: flex;
+  height: inherit;
+}
+.hero {
+  height: 300px;
+  background-color: #20374e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-image {
+  object-fit: cover;
+  object-position: top;
+}
+figure {
+  margin: 0;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
 .project {
   border: 1px solid gray;
   border-radius: 10px;
@@ -58,6 +112,22 @@ h2 {
 .project-details {
   width: 500px;
 }
+.project-cointener {
+  width: 500px;
+}
+.project-image {
+  border-radius: 10px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
 .event {
   border-radius: 10px;
   margin: 10px;
@@ -69,6 +139,9 @@ h2 {
 .event-list {
   display: flex;
   flex-wrap: wrap;
+}
+.event-list-title {
+  margin-left: 20px;
 }
 .event img {
   width: 480px;
@@ -87,74 +160,10 @@ h2 {
   width: 400px;
   text-align: left;
 }
-.even-url {
+.event-url {
   border: 1px solid #056fff;
 }
-.event-list-title {
-  margin-left: 20px;
-}
 
-.project-cointener {
-  width: 500px;
-}
-.hero {
-  height: 300px;
-  background-color: #20374e;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero-image {
-  object-fit: cover;
-}
-.header {
-  background-color: #20374e;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
-}
-.header a {
-  color: white;
-  text-decoration: none;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-.menu {
-  height: inherit;
-}
-.header ol {
-  display: flex;
-  height: inherit;
-}
-.header ol li {
-  display: flex;
-  height: inherit;
-}
-.portfolio {
-  background: #fafafa;
-  padding: 20px;
-}
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-figure {
-  margin: 0;
-}
-.footer {
-  background: #20374e;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .contact {
   background-color: #056fff;
   color: white;
@@ -163,30 +172,12 @@ figure {
   align-items: center;
   justify-content: space-between;
 }
-.social {
-}
-.social-link {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-size: 50px 50px;
-  margin: 0 10px;
-}
-.social-link.twitter {
-  background-image: url(twitter.svg);
-}
-.social-link.github {
-  background-image: url(imagen-de-github.svg);
-}
-.social-link.linkedin {
-  background-image: url(linkedin.svg);
-}
 .form-email input {
   border-color: gray;
   border-style: solid;
   border-radius: 5px;
   padding: 5px 25px;
-  background-image: url(correo.svg);
+  background-image: url(../images/correo.svg);
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -194,7 +185,7 @@ figure {
 }
 .form-email button {
   display: block;
-  margin-top: 10px;
+  margin-top: 5px;
   background: transparent;
   color: white;
   padding: 10px 0px;
@@ -204,12 +195,28 @@ figure {
 .form-email h3 {
   font-family: "Roboto", sans-serif;
 }
-.container {
-  width: 1000px;
-  margin: 0 auto;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-  flex-wrap: inherit;
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+.social-link.twitter {
+  background-image: url(../images/twitter.svg);
+}
+.social-link.github {
+  background-image: url(../images/imagen-de-github.svg);
+}
+.social-link.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+
+.footer {
+  background: #20374e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

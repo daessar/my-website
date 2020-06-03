@@ -220,3 +220,21 @@ figure {
   align-items: center;
   justify-content: center;
 }
+
+/* Desktop first media queries */
+@media screen and (max-width: 1023px) {
+  body {
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+  }
+}

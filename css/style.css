@@ -113,10 +113,13 @@ figure {
   font-family: "Roboto", sans-serif;
 }
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 .project-cointener {
   width: 500px;
+}
+.project-imageContainer {
+  width: 50%;
 }
 .project-image {
   border-radius: 10px;
@@ -134,8 +137,8 @@ figure {
 }
 .event {
   border-radius: 10px;
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   overflow: hidden;
   flex-shrink: 0;
   background: #f4fbff;
@@ -245,8 +248,54 @@ figure {
   .header .logo {
     text-align: center;
   }
+  .project {
+    display: block;
+  }
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+  .project-details {
+    width: auto;
+    font-size: 16px;
+  }
+  .project-imageContainer img {
+    max-width: 100%;
+  }
+  .project-title {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+  }
+  .project-date {
+    font-size: 1em;
+  }
+  .project-url {
+    font-size: 1em;
+  }
+  .project-descripton {
+    font-size: 1em;
+  }
+  .project-electronics {
+    font-size: 0.7em;
+  }
+  .project-title,
+  .project-electronics,
+  .project-date,
+  .project-descripton,
+  .project-url {
+    margin: 0.3em 0;
+  }
+  .event {
+    width: auto;
+  }
+  /* .event img {
+    width: 100%;
+  } */
 }
 @media screen and (max-width: 480px) {
+  .project-details {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 320px) {
 }

@@ -113,13 +113,13 @@ figure {
   font-family: "Roboto", sans-serif;
 }
 .project-details {
-  width: 50%;
-}
-.project-cointener {
   width: 500px;
 }
+.project-cointener {
+  width: auto;
+}
 .project-imageContainer {
-  width: 50%;
+  width: auto;
 }
 .project-image {
   border-radius: 10px;
@@ -232,6 +232,9 @@ figure {
 
 /* Desktop first media queries */
 @media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 1em;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -252,9 +255,10 @@ figure {
     display: block;
   }
   .project-imageContainer {
-    width: auto;
+    width: 100%;
     text-align: center;
   }
+
   .project-details {
     width: auto;
     font-size: 16px;
@@ -281,20 +285,41 @@ figure {
   .project-title,
   .project-electronics,
   .project-date,
-  .project-descripton,
+  .project-description,
   .project-url {
     margin: 0.3em 0;
   }
   .event {
     width: auto;
+    flex-shrink: 1;
   }
-  /* .event img {
+  .event-description {
+    width: auto;
+    text-align: center;
+  }
+  .event img {
     width: 100%;
-  } */
+  }
 }
 @media screen and (max-width: 480px) {
   .project-details {
-    font-size: 12px;
+    font-size: 1em;
+  }
+  .event-details {
+    margin: -2em, 0.5em 0.5em;
+    padding: 1em;
+  }
+  .contact {
+    display: block;
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  .form-email button {
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 320px) {

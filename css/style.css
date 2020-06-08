@@ -254,9 +254,10 @@ figure {
     top: 0;
     bottom: 0;
     width: 100%;
-  }
-  .hero-image {
     filter: opacity(80%) blur(1px);
+  }
+  .project-imageContainer {
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -291,6 +292,10 @@ figure {
   }
   .project-imageContainer img {
     max-width: 100%;
+  }
+  .project-image {
+    /* height: auto; */
+    object-fit: cover;
   }
   .project-title {
     font-size: 1.2em;
@@ -357,6 +362,11 @@ figure {
   .hero-image {
     filter: opacity(80%) blur(1px);
   }
+
+  /* .project-image {
+    height: inherit;
+    object-fit: cover;
+  } */
 }
 @media screen and (max-width: 320px) {
   h1 {
@@ -368,5 +378,9 @@ figure {
   }
   .hero-image {
     filter: opacity(80%) blur(1px);
+  }
+  .project-image {
+    height: 250px;
+    object-fit: cover;
   }
 }

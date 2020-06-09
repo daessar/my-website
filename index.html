@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=5.0" />
-    <title>Hi! - I'm Daniel</title>
+    <title>Hi! - I'm Daniel 🤖</title>
     <link rel="icon" href="images/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -20,7 +20,8 @@
       <!-- Se crean etiquetas div< con la clase container para que el contenido se pueda separar del borde en el css -->
       <div class="container">
         <figure class="logo">
-          <img src="images/Logo2.jpg" alt="Logo de http://www.daessar.dev" />
+          <!-- <img src="images/circuit.png" alt="Logo de http://www.daessar.dev" width="42" height="42" /> -->
+          <h1 class="nombre">Daniel Sánchez</h1>
         </figure>
         <!-- menu y enlaces para secciones de la pagina con # -->
         <nav class="menu">
@@ -48,7 +49,7 @@
     <section class="hero">
       <div class="container">
         <h1>
-          Hola!! Soy Daniel Esteban
+          Hola!! Soy Daniel Sánchez
           <strong>
             <br />
             Desarrollador</strong
@@ -81,7 +82,7 @@
             </p>
             <p class="project-url">
               <small
-                ><strong>Puedes consultar aqui</strong>
+                ><strong>Puedes consultar aquí</strong>
                 https://github.com/daessar/BHF-Tech</small
               >
             </p>
@@ -246,13 +247,14 @@
       ipad.addListener(validation)
       function validation (event) {
         if (event.matches) {
-          burgerButton.addEventListener('click', hideShow)          
+          burgerButton.addEventListener('click', hideShow);          
         }
         else {
-          burgerButton.removeEventListener('click', hideShow)          
+          burgerButton.removeEventListener('click', hideShow);          
         }
-        console.log(event);
       }
+      validation(ipad);
+      
       function hideShow(){
         if (menu.classList.contains('is-active')) {
         menu.classList.remove('is-active');  

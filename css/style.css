@@ -112,7 +112,11 @@ ul {
 figure {
   margin: 0;
 }
-
+.nombre {
+  display: inline-flex;
+  font-weight: bolder;
+  font-size: 30px;
+}
 .portfolio {
   background: #fafafa;
   padding: 20px;
@@ -306,6 +310,15 @@ figure {
   .project-imageContainer {
     align-items: center;
   }
+  .portfolio {
+    padding: 0px;
+  }
+  .event-list-title {
+    margin-left: 0;
+  }
+  figure {
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -314,6 +327,10 @@ figure {
   }
   h1 {
     text-shadow: 1px 2px 2px #000;
+  }
+  h2 {
+    font-size: 1em;
+    margin: 0.5em 0;
   }
   .header ol {
     display: block;

@@ -3,22 +3,25 @@
   <!-- cabecera -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome - I am DanielS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=5.0" />
+    <title>Hi! - I'm Daniel 🤖</title>
     <link rel="icon" href="images/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <!-- header logo - Se identidica con una clase para poder darle estilos con el css -->
     <header class="header">
       <!-- Se crean etiquetas div< con la clase container para que el contenido se pueda separar del borde en el css -->
       <div class="container">
         <figure class="logo">
-          <img src="images/Logo2.jpg" alt="Logo de http://www.daessar.dev" />
+          <!-- <img src="images/circuit.png" alt="Logo de http://www.daessar.dev" width="42" height="42" /> -->
+          <h1 class="nombre">Daniel Sánchez</h1>
         </figure>
         <!-- menu y enlaces para secciones de la pagina con # -->
         <nav class="menu">
@@ -46,7 +49,7 @@
     <section class="hero">
       <div class="container">
         <h1>
-          Hola!! Soy Daniel Esteban
+          Hola!! Soy Daniel Sánchez
           <strong>
             <br />
             Desarrollador</strong
@@ -79,11 +82,11 @@
             </p>
             <p class="project-url">
               <small
-                ><strong>Puedes consultar aqui</strong>
+                ><strong>Puedes consultar aquí</strong>
                 https://github.com/daessar/BHF-Tech</small
               >
             </p>
-            <p class="project-descripton">
+            <p class="project-description">
               Be Hydrofarmer hace que la experiencia de cultivar urbano sea más
               fácil por medio de una aplicación móvil desarrollada para nuestros
               cultivos.
@@ -130,6 +133,7 @@
             </p>
           </div>
         </article>
+
         <!-- Inicio de otro proyecto -->
         <article class="event">
           <figure class="event-imageContainer">
@@ -152,6 +156,7 @@
             </p>
           </div>
         </article>
+
         <article class="event">
           <figure class="event-imageContainer">
             <img
@@ -198,7 +203,7 @@
       </div>
     </section>
     <!-- Seccion donde muestro la informacion de contacto y donde seguirme -->
-    <section id="contacto" class="contact">
+    <section id="contacto" class="contact"> 
       <div class="container">
         <form action="/suscripcion/" class="form-email">
           <h3>¿Creamos algo juntos?</h3>
@@ -206,7 +211,7 @@
           <button>Enviar</button>
         </form>
         <!-- Redes sociales para saber más de mi -->
-        <div class="social">
+    <div class="social"> 
           <a
             href="https://twitter.com/daessaar"
             target="_blank"
@@ -225,12 +230,40 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> 
+
     <!-- El footer se usa para poner una descripcion en el pie de pagina del website -->
     <footer class="footer">
       <div>
         <p>Copyright &copy; 2020 by Daessar &#128640</p>
       </div>
-    </footer>
+    </footer> 
+    <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)');
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu');      
+      
+
+      ipad.addListener(validation)
+      function validation (event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow);          
+        }
+        else {
+          burgerButton.removeEventListener('click', hideShow);          
+        }
+      }
+      validation(ipad);
+      
+      function hideShow(){
+        if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');  
+        }
+        else {
+        menu.classList.add('is-active');
+        }
+      }
+      
+    </script>
   </body>
 </html>

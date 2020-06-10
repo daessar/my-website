@@ -37,7 +37,7 @@
               <a class="link" href="#contacto">Trabajemos juntos</a>
             </li>
             <li>
-              <a class="link" href="https://www.youtube.com" target="_blank"
+              <a class="link" onclick="youtube()" 
                 >Tutoriales</a
               >
             </li>
@@ -205,10 +205,10 @@
     <!-- Seccion donde muestro la informacion de contacto y donde seguirme -->
     <section id="contacto" class="contact"> 
       <div class="container">
-        <form action="/suscripcion/" class="form-email">
+        <form class="form-email">
           <h3>¿Creamos algo juntos?</h3>
           <input type="text" value="Dejame tu email"" id="email"/>
-          <button>Enviar</button>
+          <button id="enviar" onclick="correo()">Enviar</button>
         </form>
         <!-- Redes sociales para saber más de mi -->
     <div class="social"> 
@@ -238,32 +238,6 @@
         <p>Copyright &copy; 2020 by Daessar &#128640</p>
       </div>
     </footer> 
-    <script>
-      const ipad = window.matchMedia('screen and (max-width: 767px)');
-      const menu = document.querySelector('.menu');
-      const burgerButton = document.querySelector('#burger-menu');      
-      
-
-      ipad.addListener(validation)
-      function validation (event) {
-        if (event.matches) {
-          burgerButton.addEventListener('click', hideShow);          
-        }
-        else {
-          burgerButton.removeEventListener('click', hideShow);          
-        }
-      }
-      validation(ipad);
-      
-      function hideShow(){
-        if (menu.classList.contains('is-active')) {
-        menu.classList.remove('is-active');  
-        }
-        else {
-        menu.classList.add('is-active');
-        }
-      }
-      
-    </script>
+    <script src="javascript.js"></script>
   </body>
 </html>

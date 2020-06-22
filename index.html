@@ -37,7 +37,7 @@
               <a class="link" href="#contacto">Trabajemos juntos</a>
             </li>
             <li>
-              <a class="link" href="https://www.youtube.com" target="_blank"
+              <a class="link" onclick="youtube()" 
                 >Tutoriales</a
               >
             </li>
@@ -73,7 +73,7 @@
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article class="project">
           <div class="project-details">
-            <h3 class="project-title">Be Hydro Farmer</h3>
+            <h3 class="project-title">Be Hydro Farmer🌱</h3>
             <h6 class="project-electronics">
               <strong>Electronics | Plants</strong>
             </h6>
@@ -124,7 +124,7 @@
             />
           </figure>
           <div class="event-detail">
-            <h3 class="event-title">Timbre Musical</h3>
+            <h3 class="event-title">Timbre Musical⏰</h3>
             <p class="event-description">
               Este proyecto lo desarrolle para el colegio en el cual soy
               egresado. Permite programar hasta tres horarios. Una de las
@@ -146,7 +146,7 @@
             />
           </figure>
           <div class="event-detail">
-            <h3 class="event-title">Fenixbot</h3>
+            <h3 class="event-title">Fenixbot🚗</h3>
             <p class="event-description">
               Fenixbot nace de la idea de llevar los conocimiento de diseño y
               electrónica al concurso de robótica más grande de Colombia en la
@@ -168,7 +168,7 @@
             />
           </figure>
           <div class="event-detail">
-            <h3 class="event-title">ThorArm V2</h3>
+            <h3 class="event-title">ThorArm V2🦾</h3>
             <p class="event-description">
               Desde que conocí la impresión 3d siempre quise un brazo robotico
               estilo kuka robótics o algo parecido. Este el proyecto que hasta
@@ -189,7 +189,7 @@
             />
           </figure>
           <div class="event-detail">
-            <h3 class="event-title">Fabricación Impresoras 3d</h3>
+            <h3 class="event-title">Fabricación Impresoras 📇</h3>
             <p class="event-description">
               Participe en el desarrollo de impresoras 3d en la empresa Dynamics
               Maker. El modelo de Hypercube 30 fue uno de los más complejos de
@@ -205,10 +205,10 @@
     <!-- Seccion donde muestro la informacion de contacto y donde seguirme -->
     <section id="contacto" class="contact"> 
       <div class="container">
-        <form action="/suscripcion/" class="form-email">
+        <form class="form-email">
           <h3>¿Creamos algo juntos?</h3>
           <input type="text" value="Dejame tu email"" id="email"/>
-          <button>Enviar</button>
+          <button id="enviar" onclick="correo()">Enviar</button>
         </form>
         <!-- Redes sociales para saber más de mi -->
     <div class="social"> 
@@ -238,32 +238,6 @@
         <p>Copyright &copy; 2020 by Daessar &#128640</p>
       </div>
     </footer> 
-    <script>
-      const ipad = window.matchMedia('screen and (max-width: 767px)');
-      const menu = document.querySelector('.menu');
-      const burgerButton = document.querySelector('#burger-menu');      
-      
-
-      ipad.addListener(validation)
-      function validation (event) {
-        if (event.matches) {
-          burgerButton.addEventListener('click', hideShow);          
-        }
-        else {
-          burgerButton.removeEventListener('click', hideShow);          
-        }
-      }
-      validation(ipad);
-      
-      function hideShow(){
-        if (menu.classList.contains('is-active')) {
-        menu.classList.remove('is-active');  
-        }
-        else {
-        menu.classList.add('is-active');
-        }
-      }
-      
-    </script>
+    <script src="javascript.js"></script>
   </body>
 </html>
